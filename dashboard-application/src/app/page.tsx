@@ -1,6 +1,8 @@
 "use client";
 
+import { SignIn } from "@clerk/nextjs";
 import { useState } from "react";
+import Link from "next/link";
 import { Menu, X } from "react-feather";
 import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
@@ -23,9 +25,11 @@ export default function LandingPage() {
             </button>
           ))}
         </div>
-        <button className="hidden md:block px-6 py-2 bg-gradient-to-r from-[#8B38D7] to-[#5D2AAC] text-white font-semibold rounded-lg hover:opacity-90 transition">
-          Get Started
-        </button>
+        <Link href="/sign-in">
+          <button className="hidden md:block px-6 py-2 bg-gradient-to-r from-[#8B38D7] to-[#5D2AAC] text-white font-semibold rounded-lg hover:opacity-90 transition">
+            Get Started
+          </button>
+        </Link>
         <button
           className="md:hidden text-white focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
