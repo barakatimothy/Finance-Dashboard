@@ -2,7 +2,6 @@ import React from "react";
 import { FaRobot, FaChartLine, FaCogs, FaBrain } from "react-icons/fa";
 import Button from "./ui/Button";
 import { SignInButton } from "@clerk/nextjs";
-import Link from "next/link";
 
 const HeroSection = () => {
   return (

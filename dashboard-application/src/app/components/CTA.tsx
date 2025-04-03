@@ -1,4 +1,4 @@
-import { SignIn, SignInButton } from "@clerk/nextjs";
+import { SignInButton } from "@clerk/nextjs";
 export default function CTA() {
   return (
     <section className="py-20 bg-gradient-to-r from-[#8B38D7] to-[#7029A8] text-center text-white">
