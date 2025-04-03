@@ -2,7 +2,6 @@
 
 import { SignInButton } from "@clerk/nextjs";
 import { useState } from "react";
-import Link from "next/link";
 import { Menu, X } from "react-feather";
 import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
