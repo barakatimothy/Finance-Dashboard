@@ -13,7 +13,7 @@ export default function LandingPage() {
   return (
     <div className="bg-[#0E0E10] text-white min-h-screen">
       <nav className="flex justify-between items-center py-4 px-6 bg-[#121217] shadow-md border-b border-gray-800 relative">
-        <h1 className="text-2xl font-bold text-[#8B38D7]">AGOLITE</h1>
+        <h1 className="text-2xl font-bold text-[#8B38D7]">AGOLITE BY PIPSY</h1>
         <div className="hidden md:flex space-x-6">
           {["Products", "Solutions", "Resources", "Docs"].map((item) => (
             <button
