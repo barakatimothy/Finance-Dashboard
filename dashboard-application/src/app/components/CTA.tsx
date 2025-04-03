@@ -1,5 +1,4 @@
-import { SignIn } from "@clerk/nextjs";
-import Link from "next/link";
+import { SignIn, SignInButton } from "@clerk/nextjs";
 export default function CTA() {
   return (
     <section className="py-20 bg-gradient-to-r from-[#8B38D7] to-[#7029A8] text-center text-white">
@@ -16,11 +15,11 @@ export default function CTA() {
         </p>
 
         {/* CTA Button */}
-        <Link href="/sign-in">
+        <SignInButton>
           <button className="mt-8 px-8 py-4 bg-white text-[#8B38D7] font-semibold rounded-full text-lg hover:bg-gray-200 hover:scale-105 transition-all duration-300 shadow-lg opacity-0 animate-[fadeIn_1.5s_ease-out_0.8s_forwards]">
             Get Started Now
           </button>
-        </Link>
+        </SignInButton>
       </div>
 
       {/* Floating Graphics (Optional) */}

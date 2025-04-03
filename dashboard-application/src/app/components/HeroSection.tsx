@@ -1,7 +1,7 @@
 import React from "react";
 import { FaRobot, FaChartLine, FaCogs, FaBrain } from "react-icons/fa";
 import Button from "./ui/Button";
-import { SignIn } from "@clerk/nextjs";
+import { SignInButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -49,12 +49,11 @@ const HeroSection = () => {
             ))}
           </div>
           <div className="mt-8 flex justify-center md:justify-start gap-4 opacity-0 animate-[fadeIn_2s_ease-out_1s_forwards]">
-            <Link href="/sign-in">
-              {" "}
-              <Button className="px-6 py-3 bg-[#38d7b2] text-black font-semibold rounded-full transition-transform duration-300 hover:bg-[#2ab598] hover:scale-105 shadow-md">
+            <SignInButton>
+            <Button className="px-6 py-3 bg-[#38d7b2] text-black font-semibold rounded-full transition-transform duration-300 hover:bg-[#2ab598] hover:scale-105 shadow-md">
                 Get Started
-              </Button>{" "}
-            </Link>
+              </Button>
+            </SignInButton>
             <Button className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-full transition-transform duration-300 hover:bg-gray-700 hover:scale-105 shadow-md">
               Learn More
             </Button>

@@ -1,6 +1,6 @@
 "use client";
 
-import { SignIn } from "@clerk/nextjs";
+import { SignInButton } from "@clerk/nextjs";
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "react-feather";
@@ -25,11 +25,11 @@ export default function LandingPage() {
             </button>
           ))}
         </div>
-        <Link href="/sign-in">
+        <SignInButton>
           <button className="hidden md:block px-6 py-2 bg-gradient-to-r from-[#8B38D7] to-[#5D2AAC] text-white font-semibold rounded-lg hover:opacity-90 transition">
             Get Started
           </button>
-        </Link>
+        </SignInButton>
         <button
           className="md:hidden text-white focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
