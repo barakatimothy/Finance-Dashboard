@@ -20,7 +20,7 @@ export default function LandingPage() {
             alt="Pipsy Logo"
             className="w-10 h-10 rounded-full shadow-lg"
           />
-          <h1 className="text-2xl font-bold text-[#8B38D7]">ALGOLITE BY PIPSY</h1>
+          <h1 className="text-1xl font-bold text-[#8B38D7]">ALGOLITE BY PIPSY</h1>
         </div>
 
         {/* Desktop Navigation Links */}
